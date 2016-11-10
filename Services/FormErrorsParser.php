@@ -62,7 +62,7 @@ class FormErrorsParser
             $config = $form->getConfig();
             $name = $form->getName();
             $label = $config->getOption('label');
-			$tranlation = $this->getTranslationDomain($form);
+			$translation = $this->getTranslationDomain($form);
             /*
              * If a label isn't explicitly set, use humanized field name
              */
