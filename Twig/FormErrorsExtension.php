@@ -26,7 +26,7 @@ class FormErrorsExtension extends \Twig_Extension
      */
     private $trans ;
 	
-    public function __construct(FormErrorsParser $parser, TranslatorInterface $trans)
+    public function __construct(FormErrorsParser $parser, $trans)
     {
         $this->parser = $parser;
 		if ($trans instanceof Translator || $trans instanceof TranslatorInterface)
