@@ -28,10 +28,8 @@ class FormErrorsExtension extends \Twig_Extension
     public function __construct(FormErrorsParser $parser, Translator $trans)
     {
         $this->parser = $parser;
-		if ($trans instanceof Translator || $trans instanceof Translator)
-			$this->trans = $trans ;
-		else
-			throw new \Exception('Invalid Translator Supplied.');
+        
+        $this->trans = $trans ;
     }
 
     public function getFunctions()
